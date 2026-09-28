@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>つくってバトル3D プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  :root {
+    --bg: #f3f6fb;
+    --paper: #ffffff;
+    --ink: #1b2233;
+    --sub: #56607a;
+    --line: #d9e0ec;
+    --accent: #2f6fd6;
+    --coin: #b7860b;
+    --kids-bg: #eaf2ff;
+    --kids-line: #bcd3fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #10151f;
+      --paper: #171e2c;
+      --ink: #e7ebf3;
+      --sub: #a3adc2;
+      --line: #2b3548;
+      --accent: #7fb0ff;
+      --coin: #ffd35c;
+      --kids-bg: #1a2640;
+      --kids-line: #2f4670;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #10151f;
+    --paper: #171e2c;
+    --ink: #e7ebf3;
+    --sub: #a3adc2;
+    --line: #2b3548;
+    --accent: #7fb0ff;
+    --coin: #ffd35c;
+    --kids-bg: #1a2640;
+    --kids-line: #2f4670;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+    padding-inline: 16px;
+    padding-block: 32px 64px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+
+  header { display: flex; flex-direction: column; gap: 6px; }
+  .app {
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    font-weight: 800;
+    color: var(--accent);
+    font-size: 15px;
+    letter-spacing: 0.08em;
+  }
+  h1 {
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    font-weight: 800;
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.35;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .dates { color: var(--sub); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+  .kids {
+    background: var(--kids-bg);
+    border: 2px solid var(--kids-line);
+    border-radius: 18px;
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .kids h2 {
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    font-weight: 800; font-size: 20px; margin: 0;
+  }
+  .kids ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+  .kids li::marker { color: var(--accent); }
+
+  main {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 24px 24px;
+  }
+  section { padding-block: 18px; border-bottom: 1px solid var(--line); }
+  section:last-child { border-bottom: none; }
+  h2.sec {
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    font-weight: 800; font-size: 19px; margin: 0 0 8px;
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  h2.sec .n { color: var(--accent); font-variant-numeric: tabular-nums; min-width: 1.4em; }
+  p { margin: 0 0 10px; max-width: 65ch; }
+  p:last-child { margin-bottom: 0; }
+
+  .table-wrap { overflow-x: auto; margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 520px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--line); }
+  th { font-weight: 700; color: var(--sub); font-size: 13px; letter-spacing: 0.04em; border-top: none; }
+  td:first-child { font-weight: 700; white-space: nowrap; }
+  .where { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--sub); white-space: nowrap; }
+  .where.local { color: var(--accent); border-color: var(--accent); }
+
+  ul.plain { margin: 6px 0 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 4px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .coin { color: var(--coin); font-weight: 700; }
+  footer { color: var(--sub); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="app">つくってバトル3D</div>
+    <h1>プライバシーポリシー</h1>
+    <div class="dates">制定日：2026年9月28日</div>
+  </header>
+
+  <aside class="kids" aria-label="こども向けの まとめ">
+    <h2>おうちの人といっしょに読んでね</h2>
+    <ul>
+      <li>このゲームは、名前や住所、電話番号、メールアドレスを聞きません。</li>
+      <li>きみがつけた ニックネームや つくった作品は、いっしょに遊んでいる人に見えます。本当の名前は つけないでね。</li>
+      <li>チャットに 自分や友だちの ひみつ（住所・学校・電話番号など）を 書かないでね。</li>
+      <li><span class="coin">コインを買う</span>ときは、ほんもののお金をつかいます。かならず おうちの人に聞いてからにしてね。</li>
+    </ul>
+  </aside>
+
+  <main>
+    <section>
+      <h2 class="sec"><span class="n">1</span>このポリシーについて</h2>
+      <p>このプライバシーポリシーは、スマートフォン・パソコン向けゲーム「つくってバトル3D」（以下「本アプリ」）で、どのような情報を、何のために、どのように扱うかを説明するものです。本アプリは個人の開発者（以下「開発者」）が制作・運営しています。</p>
+      <p>本アプリは小学生のお子さまも遊ぶことを想定しています。そのため、集める情報をできるだけ少なくし、開発者自身のサーバーには利用者の情報を保存しない仕組みにしています。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">2</span>扱う情報と使い道</h2>
+      <p>本アプリが扱う情報は次のとおりです。「端末の中だけ」の情報は、お使いの端末の外へは送られません。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>情報</th><th>使い道</th><th>保存場所</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ニックネーム</td>
+              <td>オンラインのロビーや対戦で、ほかのプレイヤーに表示するため</td>
+              <td><span class="where">オンライン中だけ送信</span></td>
+            </tr>
+            <tr>
+              <td>キャラクターの見た目・作った作品</td>
+              <td>オンライン対戦で、ほかのプレイヤーの画面に表示するため</td>
+              <td><span class="where">オンライン中だけ送信</span></td>
+            </tr>
+            <tr>
+              <td>チャットの内容</td>
+              <td>同じ部屋にいるプレイヤーに届けるため。URLや個人情報につながる言葉は自動で隠します</td>
+              <td><span class="where">オンライン中だけ送信</span></td>
+            </tr>
+            <tr>
+              <td>プレイヤーID</td>
+              <td>フレンド登録やブロックで、相手を区別するため（ランダムに作られる番号で、個人を特定するものではありません）</td>
+              <td><span class="where">オンライン中だけ送信</span></td>
+            </tr>
+            <tr>
+              <td>生年月日</td>
+              <td>年齢に合った機能・設定にするため</td>
+              <td><span class="where local">端末の中だけ</span></td>
+            </tr>
+            <tr>
+              <td>コイン・持ち物・設定</td>
+              <td>ゲームの進み具合を保存するため</td>
+              <td><span class="where local">端末の中だけ</span></td>
+            </tr>
+            <tr>
+              <td>フレンド・ブロックの一覧</td>
+              <td>フレンドの表示と、ブロックした相手を表示しないため</td>
+              <td><span class="where local">端末の中だけ</span></td>
+            </tr>
+            <tr>
+              <td>購入の取引番号</td>
+              <td>同じ購入でコインを二重に受け取らないようにするため</td>
+              <td><span class="where local">端末の中だけ</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">3</span>アプリ内の購入（コイン）</h2>
+      <p>コインの購入は、Google Play の決済の仕組みを通して行われます。お支払い方法（クレジットカードなど）や請求先の情報は Google が扱い、開発者が受け取ることはありません。開発者が受け取るのは、どの商品が購入されたかと取引番号だけです。</p>
+      <p>未成年の方は、保護者の方の許可を得てから購入してください。本アプリでは購入の前に保護者の方向けの確認画面を表示します。また、Google ファミリーリンクを使うと、保護者の方が購入を承認する設定にできます。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">4</span>外部のサービス</h2>
+      <p>本アプリは次のサービスを利用しています。これらのサービスは、通信や動作のために、IPアドレスや端末の種類などの技術的な情報を処理することがあります。取り扱いは各社のプライバシーポリシーに従います。</p>
+      <ul class="plain">
+        <li>Photon（Exit Games 社）：オンライン対戦の通信　<a href="https://www.photonengine.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+        <li>Google Play：アプリの配信とアプリ内購入　<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+        <li>Unity（Unity Technologies 社）：ゲームエンジン。アプリの動作に関する匿名の端末情報（機種・OSなど）が送られることがあります　<a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+      </ul>
+      <p>本アプリには広告は入っていません。利用者の情報を広告や販売のために第三者へ渡すことはありません。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">5</span>お子さまの安全のために</h2>
+      <p>本アプリは、名前・住所・電話番号・メールアドレス・写真など、個人を特定できる情報の入力を求めません。チャットには自動のフィルターがあり、困ったプレイヤーはブロックできます。お子さまがニックネームやチャットに個人情報を書かないよう、保護者の方からも声をかけていただけると安心です。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">6</span>情報の消し方</h2>
+      <p>端末の中に保存されている情報は、本アプリを端末から削除（アンインストール）するとすべて消えます。購入したコインも消え、元に戻すことはできませんのでご注意ください。開発者のサーバーには利用者の情報を保存していないため、開発者側で消す操作は必要ありません。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">7</span>このポリシーの変更</h2>
+      <p>本アプリの機能が変わったときなどに、このポリシーを変更することがあります。変更した場合は、このページの内容と日付を更新します。</p>
+    </section>
+
+    <section>
+      <h2 class="sec"><span class="n">8</span>お問い合わせ</h2>
+      <p>このポリシーや本アプリの情報の扱いについてのご質問は、Google Play の「つくってバトル3D」のページにある「デベロッパーの連絡先」のメールアドレスまでお送りください。</p>
+    </section>
+  </main>
+
+  <footer>つくってバトル3D　プライバシーポリシー　2026年9月28日 制定</footer>
+</div>
+</body>
+</html>
